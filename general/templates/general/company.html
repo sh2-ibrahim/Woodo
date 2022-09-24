@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include 'general/partials/head.html' %}
+<body>
+  <!--header section start -->
+  <div class="header_section">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <div class="logo"><img src="{% static 'general/images/logo.png' %}"></div>
+          </div>
+          <div class="col-sm-4 col-lg-5">
+            <div class="menu-area">
+                    <nav class="navbar navbar-expand-lg ">
+                        <!-- <a class="navbar-brand" href="#">Menu</a> -->
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                               <li class="nav-item active">
+                                <a class="nav-link active" href="{% url 'homepage'%}">Home<span class="sr-only">(current)</span></a> </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="{% url 'about'%}">About</a></li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="{% url 'company'%}">Testimonials</a></li>
+                               <li class="#" href="#">
+      	                        <a class="nav-link" href="{% url 'furnitures'%}">Furnitures</a></li>
+                               <li class="nav-item" href="#">
+      	                        <a class="nav-link" href="{% url 'contact'%}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+          </div>
+          <div class="col-sm-8 col-lg-4">
+            <div class="togle_3">
+                  <div class="left_main">
+                     <div class="menu_main">
+                        <a href="#"><i class="fa fa-fw fa-user"></i> Login / Register</a>
+                     </div>
+                  </div>
+                  <div class="middle_main">
+                     <div class="shoping_bag"><img src="{% static 'general/images/search-icon.png' %}"></div>
+                  </div>
+                  <div class="right_main">
+                     <div class="togle_main"><img src="{% static 'general/images/shopping-bag.png' %}"></div>
+                  </div>
+               </div>
+          </div>
+
+    </div>
+    </div>
+  </div>
+  <!-- header section end  -->
+  <!-- testi monial section start --> 
+  <div class="testi_monial_section layout_padding">
+    <div class="container">
+           <div id="my_carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <h1 class="testi_monila_text">Testi <span style="background-color: #fee421; color: #fff; padding: 0px 5px;">Monial</span></h1>
+      <div class="testimonila_inner">
+        <div class="testing_img"><img src="{% static 'general/images/will.png' %}"></div>
+        <h2 class="helina_text">Will Smith</h2>
+        <p class="dolor_text">I have recently purchased a new dining table and chairs. I am extremely satisfied with the quality and price of this furniture. The delivery was very fast and the delivery staff were polite, friendly and helpful. I would definitely recommend this company to my friends and family.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <h1 class="testi_monila_text">Testi <span style="background-color: #fee421; color: #fff; padding: 0px 5px;">Monial</span></h1>
+      <div class="testimonila_inner">
+        <div class="testing_img"><img src="{% static 'general/images/idris.png' %}"></div>
+        <h2 class="helina_text">Idris Elba</h2>
+        <p class="dolor_text">We got our furniture from Woodo and are so happy! The quality is amazing and the price is unbeatable. We were able to get a great deal on our couch and love seat set, which has transformed our living room into a warm, inviting space that we can't wait to spend time in. It's really comfortable, too—the cushions are thick enough that they don't feel heavy when you sit on them, but they're also soft enough that they make your back feel good when you lean against them.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <h1 class="testi_monila_text">Testi <span style="background-color: #fee421; color: #fff; padding: 0px 5px;">Monial</span></h1>
+      <div class="testimonila_inner">
+        <div class="testing_img"><img src="{% static 'general/images/willis.png' %}"></div>
+        <h2 class="helina_text">Bruce Willis</h2>
+        <p class="dolor_text">I bought a desk from Woodo and it's the best piece of furniture I've ever had.
+
+          I love the quality, the price, and the fact that they deliver it at my house in two days! The delivery guys are so nice and polite. They helped me put it together and took away all the packaging materials.
+          
+          The whole experience was great because I got exactly what I wanted, at a good price.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#my_carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#my_carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </div>
+  </div>
+  <!-- testi monial section end -->
+  <!-- footer section start -->
+  {% include 'general/partials/footer.html' %}
+  <!-- footer section end --> 
+  <!-- copyright section start -->  
+  <div class="copyright">
+    <div class="container">
+      <p class="copyright_text">Copyright 2019 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p>
+    </div>
+  </div>
+  <!-- copyright section end -->  
+
+      <!-- Javascript files-->
+      {% include 'general/partials/script.html' %}
+</body>
+</html>

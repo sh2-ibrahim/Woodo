@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include 'general/partials/head.html' %}
+<body>
+	<!--header section start -->
+	<div class="header_section">
+		<div class="container-fluid">
+			<div class="row">
+			    <div class="col-sm-12 col-lg-3">
+				    <div class="logo"><img src="{% static 'general/images/logo.png' %}"></div>
+			    </div>
+			    <div class="col-sm-4 col-lg-5">
+			    	<div class="menu-area">
+                    <nav class="navbar navbar-expand-lg ">
+                        <!-- <a class="navbar-brand" href="#">Menu</a> -->
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                               <li class="nav-item active">
+                                <a class="nav-link active" href="{% url 'homepage'%}">Home<span class="sr-only">(current)</span></a> </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="{% url 'about'%}">About</a></li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="{% url 'company'%}">Testimonials</a></li>
+                               <li class="#" href="#">
+      	                        <a class="nav-link" href="{% url 'furnitures'%}">Furnitures</a></li>
+                               <li class="nav-item" href="#">
+      	                        <a class="nav-link" href="{% url 'contact'%}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+			    </div>
+			    <div class="col-sm-8 col-lg-4">
+			    	<div class="togle_3">
+                  <div class="left_main">
+                     <div class="menu_main">
+                        <a href="#"><i class="fa fa-fw fa-user"></i> Login / Register</a>
+                     </div>
+                  </div>
+                  <div class="middle_main">
+                     <div class="shoping_bag"><img src="{% static 'general/images/search-icon.png' %}"></div>
+                  </div>
+                  <div class="right_main">
+                     <div class="togle_main"><img src="{% static 'general/images/shopping-bag.png' %}"></div>
+                  </div>
+               </div>
+			    </div>
+
+		</div>
+		</div>
+  </div>
+  <!-- header section end  -->
+  <!-- about section start -->
+  <div class="layout_padding about_section ">
+    <div class="container">
+      <h1 class="about_taital">About <span style="background-color: #fee421; color: #fff; padding: 0px 5px;">Us</span></h1>
+      <p class="market_text">making it look like readable English. Many desktop publishing</p>
+      <div class="about_bg">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="about_long_text">Home furnitures - At Woodo, it's all about you and your home. With the help of our amazing team, we aim to make the best choice for each of our customers. This is how we do it: by bringing together a wide range of products from different suppliers, analyzing their quality and performance metrics in different categories and then presenting them in such a way that makes buying easy and satisfying. Our mission is simple: help you buy the right furniture at the right price! </p>
+                        <button class="about_bt">ABOUT MORE</button>
+          </div>
+          <div class="col-md-4">
+            <div class="table_img"><img src="{% static 'general/images/about-img.png' %}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about section end -->
+  <!-- footer section start -->
+  {% include 'general/partials/footer.html' %}
+  <!-- footer section end --> 
+  <!-- copyright section start -->  
+  <div class="copyright">
+    <div class="container">
+      <p class="copyright_text">Copyright 2019 All Right Reserved By.<a href="https://html.design"> Free  html Templates</p>
+    </div>
+  </div>
+  <!-- copyright section end -->  
+
+      <!-- Javascript files-->
+      {% include 'general/partials/script.html' %} 
+
+</body>
+</html>
